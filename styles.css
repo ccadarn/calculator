@@ -1,0 +1,79 @@
+.calculator {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  color: #111;
+  font-size: 2em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+.equals {
+  grid-column: span 2;
+  background-color: rgb(243, 186, 79);
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.clear {
+  grid-column: span 1;
+  background-color: #ffbaba;
+  color: #cc0000;
+}
+
+/* Night mode */
+body.night-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+.calculator.night-mode {
+  background-color: #333;
+  border-color: #666;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.display.night-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+.buttons button.night-mode {
+  background-color: #555;
+  color: #f9f9f9;
+}
+
+.buttons button.night-mode:hover {
+  background-color: #777;
+}
